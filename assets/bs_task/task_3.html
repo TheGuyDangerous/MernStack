@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Amit Verma">
+    <title>Task2 Bootstrap</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+
+        .heading {
+            background-color: cyan;
+            width: 100%;
+            text-align: center;
+            font-size: xx-large;
+            padding: 3px;
+        }
+
+
+        .nav {
+            width: 100%;
+            background-color: lightgrey;
+            color: white;
+        }
+        .wrapper {
+            padding: 7px;
+            margin: 0 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .left, .right {
+            display: flex;
+            column-gap: 3rem;
+        }
+
+
+        .body {
+            display: flex;
+            height: 100%;
+            text-align: center;
+        }
+        .content {
+            flex: 4;
+        }
+        .sidebar {
+            background-color: grey;
+            flex: 1;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="heading">Ethnus Layout</div>
+    <div class="nav">
+        <div class="wrapper">
+            <div class="left">
+                <div class="nav-items">Home</div>
+                <div class="nav-items">Menu</div>
+                <div class="nav-items">About</div>
+                <div class="nav-items">Contact</div>
+            </div>
+            <div class="right">
+                <div class="nav-item">Signup</div>
+                <div class="nav-item">Login</div>
+            </div>
+        </div>
+    </div>
+    <div class="body">
+        <div class="content">
+            <p>Write your content here</p>
+        </div>
+        <div class="sidebar">
+            <p>This is</p>
+        </div>
+    </div>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script> -->
+</body>
+</html>
