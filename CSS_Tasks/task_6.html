@@ -1,0 +1,116 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task-6</title>
+  </head>
+  <style>
+    * {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .container {
+      width: 30rem;
+    }
+    .profile-img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* background-color: red; */
+    }
+    img {
+      height: 15rem;
+    }
+    body {
+      display: grid;
+      place-content: center;
+    }
+    label {
+      font-weight: bold;
+    }
+    input.text {
+      padding: 7px;
+      height: 2rem;
+      width: 100%;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+
+    button {
+      border: none;
+      color: white;
+      border-radius: 3px;
+      height: 2rem;
+      width: 4rem;
+      cursor: pointer;
+      font-size: 15px;
+      font-weight: bold;
+    }
+    button.success {
+      background: #4cb050;
+      width: 100%;
+    }
+    button.error {
+      background: #f53f3b;
+    }
+
+
+    .footer {
+        margin-top: 1rem;
+        background: #f2f2f2;
+        height: 3.6rem;
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="profile-img">
+        <img
+          src="https://cdn1.iconfinder.com/data/icons/avatars-1-5/136/58-512.png"
+          alt=""
+        />
+      </div>
+      <form>
+        <label for="username">Username</label><br />
+        <input
+          class="text"
+          type="text"
+          name="username"
+          id="username"
+          placeholder="Enter Username"
+          required
+        /><br />
+        <br />
+        <label for="password">Password</label><br />
+        <input
+          class="text"
+          type="text"
+          name="password"
+          id="password"
+          placeholder="Enter Password"
+          required
+        /><br />
+        <br />
+        <button class="success">Login</button><br />
+        <br />
+        <input
+          type="checkbox"
+          name="rememberme"
+          id="rememberme"
+          value="rememberme"
+        />
+        <label style="font-weight: normal">Remember me</label>
+        <br />
+        <div class="footer">
+          <button class="error">Cancel</button>
+          <a href="#forgot">Forgot <u>password?</u></a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

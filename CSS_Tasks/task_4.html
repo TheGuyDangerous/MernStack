@@ -1,0 +1,60 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task-4</title>
+  </head>
+  <style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        margin-top: 2rem;
+        display: flex;
+        column-gap: 5rem;
+    }
+    .left {
+        display: flex;
+        flex-direction: column;
+        row-gap: 9px;
+    }
+    .nav-item {
+        width: 75px;
+        height: 75px;
+        border-radius: 0px 5px 5px 0px;
+        cursor: pointer;
+
+
+        transition: 0.2s ease-in all;
+    }
+
+
+    .nav-item:hover {
+        width: 80px;
+        height: 80px;
+    }
+
+
+    .green { background: #04aa6d;}
+    .blue { background: #2196f3;}
+    .red { background: #f44336;}
+    .black { background: #555555;}
+   
+
+
+  </style>
+  <body>
+    <div class="left">
+      <div class="green nav-item"></div>
+      <div class="blue nav-item"></div>
+      <div class="red nav-item"></div>
+      <div class="black nav-item"></div>
+    </div>
+    <div class="right">
+      <h1>Hoverable Sidenav Buttons</h1>
+      <p>Hover over the buttons in the left side navigation to open them.</p>
+    </div>
+  </body>
+</html>
