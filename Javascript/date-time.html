@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and Time</title>
+    <style>
+        body {
+            display: grid;
+            place-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="date-section">
+        <button onclick="showDate()">show date</button>
+        <p id="date-in">Click to load</p>
+    </div>
+
+
+    <div class="date2-section">
+        <button onclick="showDateandTime()">show Time</button>
+        <p id="date-gmt">Click to load</p>
+    </div>
+
+
+
+
+    <script>
+        const showDate = () => {
+            const dateElem = document.getElementById('date-in');
+            var date = new Date();
+
+
+            const monthArr = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+
+            let day = date.getDate();
+            let month = monthArr[date.getMonth()];
+            let year = date.getFullYear();
+
+
+            let currentDate = `${day}/${month}/${year}`;
+            dateElem.innerHTML = currentDate;
+        }
+
+
+        const showDateandTime = () => {
+            const dateElem = document.getElementById('date-gmt');
+            var date = new Date();
+            dateElem.innerHTML = date;
+        }
+
+        showDate()
+        showDateandTime()
+    </script>
+
+
+</body>
+</html>

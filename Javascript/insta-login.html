@@ -1,0 +1,110 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Login</title>
+    <style>
+        body {
+            display: grid;
+            place-content: center;
+        }
+        .form {
+            width: 25rem;
+            min-height: 30rem;
+            min-width: fit-content;
+            background-color: #f7f7f7;
+            box-shadow: 0px 1px 3px  rgba(0, 0, 0, 0.3);
+        }
+        .wrapper {
+            display: flex;
+            height: 100%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            row-gap: 3px;
+        }
+
+
+        a {
+            text-decoration: none;
+            color: #0c7ff6;
+        }
+
+
+        .username input, .password input {
+            padding: 7px;
+            width: 15rem;
+            height: 3rem;
+            border: 1px solid whitesmoke;
+        }
+
+
+
+
+       
+        .username, .password {
+            /* height: 3rem; */
+            display: flex;
+            align-items: center;
+        }
+       
+        .primary {
+            border: none;
+            box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+            color: white;
+            background-color: #0c7ff6;
+            font-size: large;
+            text-align: center;
+            width: 100%;
+            border-radius: 5px;
+            width: 17rem;
+            height: 3rem;
+        }
+
+
+        .rememberforgot {
+            width: 17rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+
+        .register {
+            width: 25rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <div class="wrapper">
+            <div class="logo">
+                <h1><em>Instagram</em></h1>
+            </div>
+            <div class="username">
+                <img src="https://img.icons8.com/?size=512&id=23265&format=png" height="35px">
+                <input type="text" placeholder="Username" required>
+            </div>
+            <div class="password">
+                <img src="https://img.icons8.com/?size=512&id=2862&format=png" height="35px">
+                <input type="password" placeholder="Password" required>
+            </div>
+                <button class="primary">Log in</button>
+            <div class="rememberforgot">
+                <div class="remmbermeCB">
+                    <input type="checkbox" id="rememberme" name="rememberme" value="Bike">
+                    <label for="rememberme">Remember me</label>
+                </div>
+                <div class="forgotpassword">
+                    <a>Forgot Password?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="register">
+        <p>Don't have an account? <a>Sign up here</a></p>
+    </div>
+</body>
+</html>

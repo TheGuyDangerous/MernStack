@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse Page</title>
+    <style>
+        body {
+            display: grid;
+            place-content: center;
+        }
+       
+    </style>
+</head>
+<body>
+    <input type="number" id="number" required>
+    <button onclick="reverse()">Reverse</button>
+    <p id="output">Output: </p>
+
+
+    <script>
+        const reverse = () => {
+            const inputElem = document.getElementById('number');
+            const outputElem = document.getElementById('output');
+            let num = parseInt(inputElem.value);
+            // console.log(inputElem.value)
+
+
+            let revNum = 0;
+            while (num != 0) {
+                let ld = num % 10;
+                revNum = revNum * 10 + ld;
+                num = parseInt(num / 10);
+            }
+
+
+            outputElem.innerHTML = revNum;
+
+
+        }
+    </script>
+</body>
+</html>
